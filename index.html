@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Pomodoro Timer</title>
+    <link
+      rel="shortcut icon"
+      href="notification_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pomodoro Timer</h1>
+    </header>
+
+    <section class="clock">
+      <p class="time">
+        <span class="minute">25</span><span class="divider">:</span
+        ><span class="second">00</span>
+      </p>
+      <p class="phase">WORK</p>
+    </section>
+
+    <section>
+      <nav>
+        <li class="backwardButton"><i class="fas fa-backward"></i></li>
+        <li class="playButton">
+          <i class="fas fa-play-circle"></i>
+        </li>
+        <li class="forwardButton"><i class="fas fa-forward"></i></li>
+      </nav>
+    </section>
+
+    <section>
+      <p>
+        Current Pomodoro: <span class="pomodoroCount">0</span
+        ><span class="resetButton"><i class="fas fa-redo-alt reset"></i></span></i>
+      </p>
+    </section>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

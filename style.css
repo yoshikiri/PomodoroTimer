@@ -1,0 +1,69 @@
+html {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e1e;
+  color: lightgray;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  position: sticky;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+  /* border: 0.1rem solid rgba(20, 100, 200, 0.7); */
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  /* border-radius: 50%; */
+}
+
+.clock {
+  padding: 0;
+  font-size: 3rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  background-color: rgba(20, 100, 200, 0.3);
+}
+
+.time {
+  font-size: 5rem;
+}
+
+.time span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+p,
+.reset {
+  font-size: 1.5rem;
+}
+
+.reset {
+  margin-left: 1.5rem;
+  line-height: 50%;
+}
+
+.resetButton {
+  cursor: pointer;
+}
