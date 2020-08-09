@@ -14,8 +14,8 @@ const minute = document.querySelector('.time .minute');
 const second = document.querySelector('.time .second');
 const pomodoroCount = document.querySelector('.pomodoroCount');
 
-const workTime = 60 * 1000 * 0.1;
-const breakTime = 60 * 1000 * 0.1;
+const workTime = 60 * 1000 * 25;
+const breakTime = 60 * 1000 * 5;
 let remain = workTime;
 let isPlaying = false;
 let isWorking = true;
@@ -108,9 +108,9 @@ function nextPhase() {
   if (isWorking) {
     remain = workTime;
     startWorking();
-    updateCount();
   } else {
     remain = breakTime;
+    updateCount();
     startBreaking();
   }
 }
