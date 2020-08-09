@@ -1,5 +1,6 @@
 window.onload = () => {
   count = localStorage.getItem('count');
+  if (count === null) count = 0;
   pomodoroCount.textContent = count;
 };
 
@@ -13,8 +14,8 @@ const minute = document.querySelector('.time .minute');
 const second = document.querySelector('.time .second');
 const pomodoroCount = document.querySelector('.pomodoroCount');
 
-const workTime = 60 * 1000 * 25;
-const breakTime = 60 * 1000 * 5;
+const workTime = 60 * 1000 * 0.1;
+const breakTime = 60 * 1000 * 0.1;
 let remain = workTime;
 let isPlaying = false;
 let isWorking = true;
@@ -53,8 +54,8 @@ async function checkPermission() {
 
 function makeNotification() {
   const title = 'Pomodoro Timer';
-  const msg = 'Finish ' + (isWorking ? 'Work' : 'Break');
-  const img = 'notification_icon.png';
+  const msg = (isWorking ? 'Work' : 'Break') + ' is finished.';
+  const img = 'images/notification_icon.png';
   const notification = new Notification(title, {body: msg, icon: img});
 }
 
